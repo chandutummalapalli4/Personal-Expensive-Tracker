@@ -1,0 +1,92 @@
+/* Body and background */
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+/* Card styling */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Top cards text */
+.card h3, .card h4, .card h5 {
+  color: #343a40;
+}
+
+/* List group items */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+}
+
+/* Badges */
+.badge-category {
+  margin-left: 8px;
+  font-size: 0.85rem;
+  padding: 0.4em 0.6em;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Add/Edit Modal */
+.modal-content {
+  border-radius: 15px;
+  background: linear-gradient(145deg, #ffffff, #e9f0f7);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Inputs and selects */
+.form-control, .form-select {
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13,110,253,0.5);
+}
+
+/* Buttons in cards */
+#reset-data, #download-pdf {
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .row.mb-4 > .col-md-4 {
+    margin-bottom: 15px;
+  }
+}
